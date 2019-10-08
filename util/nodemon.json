@@ -1,0 +1,7 @@
+{
+  "ignore": [".git", "node_modules/**/node_modules", "src/public"],
+  "watch": ["src"],
+  "ext": "js,json,ts",
+  "verbose": true,
+  "exec": "cross-env ENV_FILE=development ts-node -r ./env -r tsconfig-paths/register ./src/start.ts"
+}
